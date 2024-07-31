@@ -47,16 +47,14 @@ const TodoList = () => {
                         <th>Task</th>
                         <th>Completed</th>
                         <th>CreatedDate</th>
-                        <th className="bi bi-file-earmark-plus-fill">Add</th>
-                        <th className="bi bi-trash-fill">Delete</th>
-                        <th className="bi bi-pencil-fill">Update</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     {
                         tasks.map(obj =>
                             <tr key={obj.id}><td>{obj.id}</td><td>{obj.title}</td><td>{obj.task}</td><td>{(obj.completed === true) ? "True" : "False"}</td><td>{obj.createdDate}</td>
-                                <td className="bi bi-file-earmark-plus-fill "></td><td className="bi bi-trash-fill"></td><td className="bi bi-pencil-fill" ></td>
+                                
 
                             </tr>
                         )
